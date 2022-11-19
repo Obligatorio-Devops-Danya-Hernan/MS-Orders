@@ -1,4 +1,4 @@
-name: Build JAR and Upload to S3 - Orders Microservice
+name: Build JAR > Upload to S3 - Orders Microservice
 
 on:
   push:
