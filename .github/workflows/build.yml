@@ -34,7 +34,7 @@ jobs:
     - name: Upload jar to ms-orders S3 folder
       run: | 
        mkdir -p ~/deploys/${{ secrets.MS_ORDERS_FOLDER }}
-       cp /home/runner/work/MS-Orders/MS-Orders/target/* ~/deploys/${{ secrets.MS_ORDERS_FOLDER }}/
+       cp /home/runner/work/MS-Orders/MS-Orders/target/*.jar ~/deploys/${{ secrets.MS_ORDERS_FOLDER }}/
        
     - name: Copy files to the test website with the AWS CLI
       run: |
