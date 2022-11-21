@@ -2,7 +2,7 @@ name: Build JAR > Upload to S3 - Orders Microservice
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "development" ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
        
     - name: Upload Jar files to the S3 Bucket
       run: |
-        aws s3 sync ~/deploys s3://${{ secrets.AWS_BUCKET }}
+        aws s3 sync ~/deploys s3://${{ secrets.AWS_BUCKET_DEV }} # Crear variable para cada ambiente
