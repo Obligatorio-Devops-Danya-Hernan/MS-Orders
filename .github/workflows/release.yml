@@ -8,7 +8,7 @@ jobs:
   dispatch:
     runs-on: ubuntu-latest
     steps:
-     - name: Get Branch Name
+     - name: Get Branch Name 
        run: |
           branch=${{ github.ref }}
           echo "BRANCH=$(echo $branch | cut -d"/" -f3)" >> $GITHUB_ENV
