@@ -5,7 +5,7 @@ on:
     branches: [master, staging, development]
     
 jobs:
-  releaseDispatch:
+  dispatch:
     runs-on: ubuntu-latest
     steps:
      - name: Get Branch Name
