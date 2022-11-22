@@ -3,6 +3,7 @@ name: Repository Dispatch
 on:
   push:
     branches: [master, staging, development]
+    
 
 jobs:
   dispatch:
