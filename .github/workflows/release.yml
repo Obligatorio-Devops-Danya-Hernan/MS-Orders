@@ -11,7 +11,7 @@ jobs:
       - name: Repository Dispatch
         uses: myrotvorets/trigger-repository-dispatch-action@1.0.0
         with:
-          token: ${{ secrets.REPOSITORY_ACCESS_TOKEN }}
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repo: ORT-FI-8184-DevOps/2022S2-G3-HMARINO-DBARROS
           type: ms-orders-release
           payload: '{ "ref": "${{ github.ref }}", "sha": "${{ github.sha }}" }'
